@@ -1,11 +1,21 @@
 <template>
-	<div class="container">
-		<h1>Hello from Nuxt homepage!</h1>
+	<div>
+		<div class="container">
+			<nuxt-link to="/users">Users</nuxt-link>
+			<nuxt-link to="/products">Products</nuxt-link>
+			<button @click="goTo('/products')">See Products</button>
+		</div>
 	</div>
 </template>
 
 <script>
-export default {};
+export default {
+	methods: {
+		goTo(path) {
+			this.$router.push(path);
+		},
+	},
+};
 </script>
 
 <style>

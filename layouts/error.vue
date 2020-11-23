@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<Header />
-		<Nuxt />
+		<p>An error occurred, sorry mate!</p>
 	</div>
 </template>
 
@@ -13,6 +13,3 @@ export default {
 	},
 };
 </script>
-
-<style>
-</style>
